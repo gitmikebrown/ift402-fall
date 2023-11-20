@@ -1,0 +1,90 @@
+https://laravel.com/docs/10.x/migrations
+
+https://laravel.com/docs/10.x/migrations#column-method-string
+
+https://laravel.com/docs/10.x/migrations#column-method-uuid
+
+php artisan migrate:status;
+php artisan migrate --force;
+php artisan migrate --pretend;
+php artisan migrate:fresh;
+
+//Migrations
+php artisan make:migration restaurant;
+php artisan make:migration menu;
+php artisan make:migration item;
+php artisan make:migration cuisine;
+
+php artisan make:migration restaurant_f_key;
+php artisan make:migration menu_f_key;
+php artisan make:migration item_f_key;
+
+//Controller
+php artisan make: controller CONTROLLER-NAME-HERE --resource
+php artisan make:controller WF1_controller --resource
+php artisan make:controller WF2_controller --resource
+php artisan make:controller WF3_controller --resource
+php artisan make:controller WF4_controller
+php artisan make:controller WF5_controller --resource
+php artisan make:controller WF6_controller --resource
+php artisan make:controller WF7_controller --resource
+php artisan make:controller WF8_controller --resource
+
+//Model
+php artisan make:model WF1_model
+
+//artisan make commands
+   make:cast  
+   make:channel  
+   make:component  
+   make:command  
+   make:controller  
+   make:event  
+   make:exception  
+   make:factory  
+   make:job  
+   make:listener  
+   make:mail  
+   make:middleware  
+   make:model  
+   make:notification  
+   make:observer  
+   make:policy  
+   make:provider  
+   make:request  
+   make:resource  
+   make:rule  
+   make:scope  
+   make:seeder  
+   make:test  
+   make:view  
+   make:migration  
+
+
+php artisan migrate:status;
+php artisan route:list;
+php artisan route:list -v;
+
+
+https://github.com/bradtraversy/laragigs/tree/main
+
+
+///Seeding
+composer require fakerphp/faker
+https://fakerphp.github.io/
+php artisan db:seed
+OR
+php artisan migrate:fresh --seed
+
+//factory
+php artisan make:factory restaurant
+php artisan make:factory menu
+php artisan make:factory item
+php artisan make:factory cuisine
+
+
+//Model
+php artisan make:model restaurant
+php artisan make:model menu
+php artisan make:model item
+php artisan make:model cuisine
