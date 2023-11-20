@@ -131,7 +131,7 @@ bottom: 0;
           <div><a href="/wf5_register">WF5 Register</a></div>
           <div><a href="/wf6?restaurant=10016">WF6</a></div>
           <div><a href="/wf7">WF7</a></div>
-          <div><a href="/wf8">WF8</a></div></div>
+          <div><a href="/wf8?item=13205">WF8</a></div></div>
 
        
       </div>
