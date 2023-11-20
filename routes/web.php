@@ -58,7 +58,8 @@ use App\Http\Controllers\WF8_controller;
 // Login
 //***************************************/
     
-    Route::get('/wf5', function () {return view('wf5');});
+    Route::get('/wf5_login', function () {return view('wf5_login');});
+    Route::get('/wf5_register', function () {return view('wf5_register');});
 
 //***************************************/
 // Owner Profile
@@ -76,7 +77,7 @@ use App\Http\Controllers\WF8_controller;
 // Edit Menu Item
 //***************************************/
     
-    Route::get('/wf8', function () {return view('wf8');});
+Route::get('/wf8', [WF8_controller::class, 'index']);
 
 
 

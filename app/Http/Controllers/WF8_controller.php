@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\WF8_model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class WF8_controller extends Controller
 {
@@ -11,7 +12,15 @@ class WF8_controller extends Controller
      */
     public function index()
     {
-        //
+        $menuItem = DB::table('item')
+                    ->where('itemID','=',request('item'))
+                    //->where('menu_ID','=',request('menu'))
+                    ->distinct()
+                    ->get();
+        //dd($menuItem);
+        return view('wf8',[
+            'item' => $menuItem
+        ]);
     }
 
     /**

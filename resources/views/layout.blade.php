@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -127,8 +127,9 @@ bottom: 0;
           <div><a href="/wf2">WF2</a></div>
           <div><a href="/wf3">WF3</a></div>
           <div><a href="/wf4">WF4</a></div>
-          <div><a href="/wf5">WF5</a></div>
-          <div><a href="/wf6">WF6</a></div>
+          <div><a href="/wf5_login">WF5 Login</a></div>
+          <div><a href="/wf5_register">WF5 Register</a></div>
+          <div><a href="/wf6?restaurant=10016">WF6</a></div>
           <div><a href="/wf7">WF7</a></div>
           <div><a href="/wf8">WF8</a></div></div>
 

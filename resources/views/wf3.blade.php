@@ -22,7 +22,7 @@
 </div>
 @foreach ($menu_items as $item)
 <div class="container">
-   <div class="card ">
+   <div class="card">
       <div class="card-header">
          {{$item->itemName}}
       </div>

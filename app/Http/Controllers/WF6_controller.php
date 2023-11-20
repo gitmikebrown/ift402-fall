@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\WF6_model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class WF6_controller extends Controller
 {
@@ -11,10 +12,30 @@ class WF6_controller extends Controller
      */
     public function index()
     {
+        
+        $menuItems = DB::table('item')
+                    ->where('restaurant_ID','=',request('restaurant'))
+                    //->where('menu_ID','=',request('menu'))
+                    ->distinct()
+                    ->get();
+
+        $resturantInfo = DB::table('restaurant')
+                    ->where('restaurantID','=',request('restaurant'))
+                    ->get();
+        
+        //dd($resturantInfo);
+        //dd();
+        //return $menuItems;
+        
         return view('wf6',[
-            'resturant' => WF6_model::resturant(),
-            'resturant_items' => WF6_model::resturant_items()
+            'resturant' => $resturantInfo,
+            'menu_items' => $menuItems
         ]);
+        
+        
+        
+        
+        
     }
 
     /**
